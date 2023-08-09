@@ -9,8 +9,6 @@
 • È compatibile con i seguenti sistemi operativi:
 - Android
 
-• Utilizza uno stile minimal poiché si tratta di un contesto lavorativo; ciò lo rende semplice, intuitivo e rapido. Un sistema di gestione senza fronzoli.
-
 # Membri
 La Rosa Mazza Nicolò,
 Gabriele Bova
