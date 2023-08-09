@@ -1,5 +1,3 @@
-# HotelCode
-
 # Cos'è HotelCode?
 
 • HotelCode nasce come progetto universitario per il corso 'Programmazione Web e Mobile' tenuto dall'università degli studi di Palermo.
@@ -22,7 +20,7 @@ Alcune funzionalità potrebbero essere:
 - Gestione delle prenotazioni: L'applicazione offre un sistema di gestione delle prenotazioni che consente di visualizzare tutte le prenotazioni passate e future, gestire le cancellazioni e modificare le prenotazioni esistenti. 
 - I pagamenti (se previsti) possono essere “simulati” tramite appositi metodi definiti dal programmatore. In altre parole non è richiesto l’uso di librerie che implementino un trasferimento reale di denaro.
 
-In questa repository è dunque possibile trovare:
+# In questa repository trovi:
 - Codice sorgente (kotlin, xml, png vari)
 - Mockups
 - File per la popolazione del database
