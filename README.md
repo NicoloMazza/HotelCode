@@ -2,7 +2,11 @@
 
 • HotelCode nasce come progetto universitario per il corso 'Programmazione Web e Mobile' tenuto dall'università degli studi di Palermo.
 
-• È un app Kotlin based per smartphone con sistema operativo Android, che ha come scopo quello di permettere agli utenti registrati di interagire con i servizi offerti da un hotel, quali: ricerca e prenotazione delle camere (con simulazione del pagamento), gestione delle prenotazioni tramite un archivio, disponibilità di una reception digitale per informazioni generali, segnalazioni e contatti, sezione account dedicata ai dati personali dell'utente e al riscatto di codici promozionali (anche tramite scansione di codici QR)
+• È un app Kotlin based per smartphone con sistema operativo Android, e mira a offrire agli utenti registrati un'esperienza interattiva con i servizi dell'hotel. Le funzionalità chiave includono:
+- Ricerca e Prenotazione Camere: Gli utenti possono cercare disponibilità delle camere e effettuare prenotazioni simulando il pagamento.
+- Gestione Prenotazioni: L'app archivia le prenotazioni in un archivio facilmente accessibile per una gestione ottimale.
+- Reception Digitale: Fornisce informazioni generali, contatti e opzioni di segnalazione direttamente attraverso l'app.
+- Sezione Account Personale: Gli utenti possono accedere ai propri dati personali e riscattare codici promozionali, anche tramite scansione QR.
 
 • È compatibile con i seguenti sistemi operativi:
 - Android
