@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">HotelCode</string>
+
+    <!-- ArchivioFragment -->
+    <string name="archivio_fragment_sfondo_superiore">Archivio Prenotazioni</string>
+    <string name="archivio_fragment_testo_passate">Prenotazioni passate:</string>
+    <string name="archivio_fragment_testo_presenti">Prenotazioni presenti:</string>
+    <string name="archivio_fragment_testo_future">Prenotazioni future:</string>
+
+    <!-- AutenticazioneActivity -->
+    <string name="autenticazione_activity_sfondo_superiore">Benvenuti in HotelCode!</string>
+    <string name="autenticazione_activity_login">Login</string>
+    <string name="autenticazione_activity_registrati">Registrati</string>
+    <string name="autenticazione_activity_recupera">Recupera</string>
+    <string name="autenticazione_activity_invia">Invia</string>
+
+    <string name="campi_non_validi">Almeno uno dei campi non è riempito correttamente!</string>
+    <string name="formato_non_valido">Formato non valido!</string>
+
+    <string name="emoticon_pallino_true">✅</string>
+    <string name="emoticon_pallino_false">❌</string>
+
+    <string name="formato_data">"dd-MM-yyyy"</string>
+    <string name="formato_ora">"HH:mm:ss"</string>
+
+    <string name="registrati_fragment_titolo">Registrati gratis!</string>
+    <string name="registrati_fragment_username">Username</string>
+    <string name="registrati_fragment_nome">Nome</string>
+    <string name="registrati_fragment_cognome">Cognome</string>
+    <string name="registrati_fragment_email">Email</string>
+    <string name="registrati_fragment_password">Password</string>
+    <string name="registrati_fragment_domanda">Domanda Sicurezza</string>
+    <string name="registrati_fragment_risposta">Risposta</string>
+    <string name="registrati_fragment_cod_fiscale">Codice Fiscale</string>
+    <string name="registrati_fragment_cod_sicurezza">Codice Sicurezza</string>
+    <string name="registrati_fragment_num_carta">Numero Carta</string>
+    <string name="registrati_fragment_scadenza_carta">Scadenza Carta</string>
+
+    <string name="reception_fragment_titolo">Reception</string>
+    <string name="reception_fragment_invia">Invia segnalazione</string>
+</resources>
