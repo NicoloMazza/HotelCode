@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- In questo file xml definisco tutto quello che riguarda i pulsanti della navigation bar -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottone_reception"
+        android:icon="@drawable/reception"
+        android:title="Reception" />
+    <item
+        android:id="@+id/bottone_archivio"
+        android:icon="@drawable/archivio"
+        android:title="Archivio" />
+    <item
+        android:id="@+id/bottone_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottone_ricerca"
+        android:icon="@drawable/ricerca"
+        android:title="Ricerca" />
+    <item
+        android:id="@+id/bottone_account"
+        android:icon="@drawable/account"
+        android:title="Account" />
+</menu>
