@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    tools:context=".autenticazione.RegistratiFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="30dp" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/registrati_fragment_titolo"
+                android:textColor="@color/verde"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+            <TextView
+                android:id="@+id/textViewDomanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="268dp"
+                android:text="Domanda di sicurezza"
+                android:textColor="@color/verde"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextDomanda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.864"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.049" />
+
+            <EditText
+                android:id="@+id/editTextDomanda"
+                android:layout_width="132dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="316dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: qual è il nome del tuo cane?"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewCodiceFiscale"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.862"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="148dp"
+                android:text="Username"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextUsername"
+                app:layout_constraintEnd_toEndOf="@+id/textViewNome"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_goneMarginLeft="20sp" />
+
+            <TextView
+                android:id="@+id/textViewCognome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="176dp"
+                android:layout_marginEnd="148dp"
+                android:text="Cognome"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextCognome"
+                app:layout_constraintEnd_toEndOf="@+id/textViewEmail"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="129dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="164dp"
+                android:layout_marginBottom="36dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: Mario89"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewCognome"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNome"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.936" />
+
+            <EditText
+                android:id="@+id/editTextNome"
+                android:layout_width="130dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="116dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: Mario"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.877"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.043" />
+
+            <TextView
+                android:id="@+id/textViewNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:text="Nome"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextNome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.769"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="176dp"
+                android:text="Email"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.765"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextCognome"
+                android:layout_width="136dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="212dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: Rossi"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPassword"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="133dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="212dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: cob@booble.gg"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDomanda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.88"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="272dp"
+                android:text="Password"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextPassword"
+                app:layout_constraintEnd_toEndOf="@+id/textViewDomanda"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="139dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="317dp"
+                android:layout_marginBottom="47dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: Pass89@"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewRisposta"
+                app:layout_constraintEnd_toEndOf="@+id/editTextDomanda"
+                app:layout_constraintHorizontal_bias="0.121"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewRisposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="379dp"
+                android:text="Risposta"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextRisposta"
+                app:layout_constraintEnd_toEndOf="@+id/textViewCodiceFiscale"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextRisposta"
+                android:layout_width="138dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="412dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: Luis"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewNumeroCarta"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCodiceFiscale"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.392" />
+
+            <EditText
+                android:id="@+id/editTextNumeroCarta"
+                android:layout_width="140dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="524dp"
+                android:layout_marginEnd="168dp"
+                android:layout_marginBottom="48dp"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="es: 00001111222233334444"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewCodiceDiSicurezza"
+                app:layout_constraintEnd_toEndOf="@+id/scadenzaCarta"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+            <TextView
+                android:id="@+id/textViewNumeroCarta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="484dp"
+                android:layout_marginBottom="52dp"
+                android:text="Numero Carta"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextNumeroCarta"
+                app:layout_constraintEnd_toEndOf="@+id/textViewScadenzaCarta"
+                app:layout_constraintHorizontal_bias="0.187"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+            <TextView
+                android:id="@+id/textViewCodiceFiscale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="376dp"
+                android:text="Codice Fiscale"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextCodiceFiscale"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.818"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.027" />
+
+            <EditText
+                android:id="@+id/editTextCodiceFiscale"
+                android:layout_width="150dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="412dp"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="es: ABCDEF11G22H456I"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewScadenzaCarta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.914"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.362" />
+
+            <TextView
+                android:id="@+id/textViewScadenzaCarta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="480dp"
+                android:text="Scadenza Carta"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextNumeroCarta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.129" />
+
+            <EditText
+                android:id="@+id/scadenzaCarta"
+                android:layout_width="136dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="96dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: MM/AA"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextCodiceSicurezzaCarta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.901"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewScadenzaCarta" />
+
+            <TextView
+                android:id="@+id/textViewCodiceDiSicurezza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="590dp"
+                android:layout_marginBottom="44dp"
+                android:text="Codice Sicurezza"
+                android:textColor="@color/verde"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextCodiceSicurezzaCarta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.164"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextCodiceSicurezzaCarta"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="620dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="es: 000"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.136"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="732dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

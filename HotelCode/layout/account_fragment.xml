@@ -1,0 +1,707 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.AccountFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="800dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-80dp"
+                android:src="@drawable/sfondosuperiore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="385dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="15sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundautenticazione"
+                app:layout_constraintBottom_toTopOf="@+id/guideline19"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline20"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Account e Promozioni"
+                android:textColor="@color/verde"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/testoPunti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:text="Punti correnti:"
+                android:textColor="@color/panna"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/panna"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
+            <TextView
+                android:id="@+id/testoCodiceOrdinario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:text="Riscatti qui il tuo codice!"
+                android:textColor="@color/panna"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toBottomOf="@+id/codiciSpeciali" />
+
+            <TextView
+                android:id="@+id/testoRiscatta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="360dp"
+                android:text="Puoi riscattare i codici promozionali cliccando \nsulla carta corrispondente"
+                android:textColor="@color/panna"
+                app:layout_constraintBottom_toTopOf="@+id/guideline19"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPunti"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="90dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/guideline19"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
+            <Button
+                android:id="@+id/dati"
+                android:layout_width="78dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="13dp"
+                android:text="Dati"
+                android:textSize="28px"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/codiciOrdinari"
+                app:layout_constraintHorizontal_bias="0.127"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/codiciOrdinari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp"
+                android:text="Codici\nordinari"
+                android:textSize="28px"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/codiciSpeciali"
+                app:layout_constraintStart_toStartOf="@+id/dati"
+                tools:layout_editor_absoluteX="119dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+            <Button
+                android:id="@+id/codiciSpeciali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:text="Codici\nspeciali"
+                android:textSize="28px"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/logout"
+                app:layout_constraintStart_toStartOf="@+id/codiciOrdinari" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:text="Logout"
+                android:textSize="28px"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:text="Oppure inserisci manualmente il codice:"
+                android:textColor="@color/panna"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/button" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:hint="Inserisci qui il codice..."
+                android:inputType="number"
+                android:textColor="@color/panna"
+                android:textColorHint="@color/panna"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:text="Scansiona codice QR"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="701dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="247dp" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollDati"
+                android:layout_width="369dp"
+                android:layout_height="435dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="255dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline29"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="137dp"
+                    tools:layout_editor_absoluteY="-9dp">
+
+                    <ImageView
+                        android:id="@+id/fotoAccount"
+                        android:layout_width="82dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="260dp"
+                        android:textColor="@color/panna"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Username:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="120dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoNome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Nome:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/nome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="170dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoCognome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="230dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Cognome:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/cognome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="220dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="280dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Email:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="270dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="330dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Password:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="320dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoDomanda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="380dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Domanda di sicurezza:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/domanda"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="370dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoRisposta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="430dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Risposta:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/risposta"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="420dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoCodFiscale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="480dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Codice fiscale:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/codFiscale"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="470dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoPuntiCorrenti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="530dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Punti correnti:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/puntiCorrenti"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="520dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoNumeroCarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="580dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Numero carta:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/numCarta"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="570dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoScadenzaCarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="630dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Scadenza carta:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/scadenzaCarta"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="620dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoCodiceSicurezzaCarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="680dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Codice di sicurezza:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/codSicurezzaCarta"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="670dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/testoImportoCarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="730dp"
+                        android:layout_marginEnd="250dp"
+                        android:gravity="right"
+                        android:text="Importo carta:"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/importoCarta"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="720dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="@color/panna"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/modifica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="780dp"
+                        android:text="modifica"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerutente"
+                        android:layout_width="243dp"
+                        android:layout_height="85dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/gruppoDati"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:constraint_referenced_ids="scrollDati" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/gruppoCodiciOrdinari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:constraint_referenced_ids="testoCodiceOrdinario, testoPunti, textView16, recyclerPunti, testoRiscatta" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/gruppoCodiciSpeciali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:constraint_referenced_ids="textView13,button,editTextTextPersonName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="170dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#003566"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <ImageView
+        android:id="@+id/immaginePrenotazione"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/dataFinePrenotazione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="140dp"
+        android:textColor="@color/panna" />
+
+    <TextView
+        android:id="@+id/dataInizioPrenotazione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/panna"/>
+
+    <TextView
+        android:id="@+id/nomeCameraPrenotazione"
+        android:layout_width="108dp"
+        android:textColor="@color/panna"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp" />
+
+</androidx.cardview.widget.CardView>

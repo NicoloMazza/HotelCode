@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="300dp" android:layout_height="170dp" android:layout_margin="10dp" android:backgroundTint="#003566" app:cardCornerRadius="20dp" app:cardElevation="12dp">
+    <ImageView android:id="@+id/immagine_camera_recycler_home"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="per notte"
+        android:textColor="@color/panna"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="220dp"
+        />
+    <TextView
+        android:id="@+id/prezzo_camera_recycler_home"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/panna"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="120dp" />
+    <TextView
+        android:id="@+id/punteggio_camera_recycler_home"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/panna"
+        android:layout_marginTop="120dp" />
+    <TextView
+        android:id="@+id/nome_camera_recycler_home"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:textColor="@color/panna"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp" />
+</androidx.cardview.widget.CardView>

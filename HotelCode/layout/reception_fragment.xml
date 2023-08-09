@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".reception.ReceptionFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1172dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- mettere altezza pari a wrap content-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-80dp"
+                android:src="@drawable/sfondosuperiore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="356dp"
+                android:layout_height="178dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="270dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundautenticazione"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="356dp"
+                android:layout_height="178dp"
+                android:layout_marginTop="890dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundautenticazione"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fotoPianta"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:layout_marginTop="920dp"
+                android:layout_marginEnd="190dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descrizionePianta"
+                android:layout_width="183dp"
+                android:layout_height="143dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="930dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/panna"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="356dp"
+                android:layout_height="178dp"
+                android:layout_marginTop="682dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundautenticazione"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="356dp"
+                android:layout_height="178dp"
+                android:layout_marginTop="478dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundautenticazione"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/reception_fragment_titolo"
+                android:textColor="@color/verde"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/campoFotoAlbergo"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginTop="140dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descrizioneAlbergo"
+                android:layout_width="336dp"
+                android:layout_height="185dp"
+                android:layout_marginTop="300dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/panna"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fotoPalestra"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:layout_marginTop="500dp"
+                android:layout_marginEnd="180dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descrizionePiscina"
+                android:layout_width="185dp"
+                android:layout_height="185dp"
+                android:layout_marginTop="720dp"
+                android:layout_marginEnd="150dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/panna"
+
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fotoPiscina"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="710dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descrizionePalestra"
+                android:layout_width="174dp"
+                android:layout_height="157dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="500dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/panna"
+
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fotoReception"
+                android:layout_width="392dp"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+            <TextView
+                android:id="@+id/infoContatti"
+                android:layout_width="370dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="1320dp"
+                android:text="Vuoi contattarci? I nostri contatti:"
+                android:textColor="@color/panna"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="345dp"
+                android:layout_height="209dp"
+                android:layout_marginTop="1390dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundautenticazione"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nomeHotel"
+                android:layout_width="161dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="1410dp"
+                android:layout_marginEnd="140dp"
+                android:textColor="@color/panna"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/viaHotel"
+                android:layout_width="173dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="1410dp"
+                android:textColor="@color/verde"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="162dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="1490dp"
+                android:layout_marginEnd="140dp"
+                android:textColor="@color/panna"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="170dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="1490dp"
+                android:textColor="@color/panna"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sitoWeb"
+                android:layout_width="155dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="1550dp"
+                android:layout_marginEnd="140dp"
+                android:textColor="@color/verde"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/orariCheck"
+                android:layout_width="170dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="1550dp"
+                android:textColor="@color/panna"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="317dp"
+                android:layout_height="209dp"
+                android:layout_marginBottom="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backgroundautenticazione"
+                app:layout_constraintBottom_toTopOf="@+id/bottone"
+                app:layout_constraintEnd_toEndOf="@id/guideline23"
+                app:layout_constraintStart_toStartOf="@id/guideline22" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="288dp"
+                android:layout_height="182dp"
+                android:layout_marginTop="1750dp"
+                android:textColor="@color/panna"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/bottone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="174dp"
+                android:text="@string/reception_fragment_invia"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline23"
+                app:layout_constraintStart_toStartOf="@id/guideline22" />
+
+            <TextView
+                android:id="@+id/textViewCaratteriInseriti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="1680dp"
+                android:text="Caratteri: 000/000"
+                android:textColor="#003566"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="1156dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="2181dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="170dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#003566"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="12dp">
+    <TextView
+        android:id="@+id/campoUsername"
+        android:textColor="@color/panna"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/campoPunteggioRecensione"
+        android:textColor="@color/panna"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/campoTestoRecensione"
+        android:textSize="9dp"
+        android:justificationMode="inter_word"
+        android:textColor="@color/panna"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="60dp" />
+</androidx.cardview.widget.CardView>
