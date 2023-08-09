@@ -1,4 +1,4 @@
-# Cos'è HotelCode? ⁉️
+# Cos'è HotelCode? ❓
 
 • HotelCode nasce come progetto universitario per il corso 'Programmazione Web e Mobile' tenuto dall'università degli studi di Palermo.
 
